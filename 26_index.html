@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Target item-1 */
+        #list1 li:nth-child(1) {
+            color: red;
+        }
+        
+        /* Target item-2 */
+        #list1 li:nth-child(2) {
+            color: blue;
+        }
+
+        /* Target item-3 and item-4 (adjacent sibling combinator) */
+        #list1 li:nth-child(3),
+        #list1 li:nth-child(4) {
+            color: green;
+        }
+
+        /* Target item-5 */
+        #list1 li:nth-child(5) {
+            color: orange;
+        }
+
+        /* Target item-6 */
+        #list1 li:nth-child(6) {
+            color: purple;
+        }
+
+        /* Target item-7 and item-8 (general sibling combinator) */
+        #list1 li:nth-child(7),
+        #list1 li:nth-child(8) {
+            color: pink;
+        }
+
+        /* Target item-9 */
+        #list1 li:nth-child(9) {
+            color: brown;
+        }
+
+        /* Target item-10 */
+        #list1 li:nth-child(10) {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list1">
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li>item-7</li>
+        <li>item-8</li>
+        <li>item-9</li>
+        <li>item-10</li>
+    </ul>
+</body>
+</html>
