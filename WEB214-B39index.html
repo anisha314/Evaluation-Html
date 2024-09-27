@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        body{
+            font-size: Arial sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            margin:35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .navbar .logo{
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .login{
+            border:  1px solid black;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: red;
+            background-color: white;
+            border: 2px solid red;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"> masai.</div>
+        <div class="menu">
+            <a href="#">COURSES</a>
+            <a href="#"> FEE & ISA </a>
+            <a href="#">ABOUT US</a>
+            <a href="#">HIRE FROM US</a>
+            <a href="#">FAQ</a>
+            <a href="#">EVENTS</a>
+            <a href="#">REFER & EARN</a>
+        </div>
+        <a  class="login" href="#">LOGIN</a>
+    </div>
+    
+</body>
+</html>
