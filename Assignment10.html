@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <style>
+        body {
+            background-color: purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /* Two equal columns */
+            grid-template-rows: auto auto; /* Rows will adjust to content height */
+            gap: 10px; /* Space between boxes */
+            width: 350px; /* Container width */
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; /* Fill the column width */
+            height: 100px; /* Height for all boxes */
+            font-size: 24px;
+            color: white;
+        }
+        .box-4 {
+            background-color: orange;
+            grid-column: span 2; /* Span across both columns */
+            height: 100px; /* Height for box 4 */
+        }
+        .box-1 {
+            background-color: blue;
+            grid-column: 1;
+        }
+        .box-5 {
+            background-color: brown;
+            grid-column: 2;
+        }
+        .box-6 {
+            background-color: lightpink;
+            grid-row:span 2;
+            height: Auto; /* Height for box 6 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-4">4</div>
+        <div class="box box-6">6</div>
+        <div class="box box-1">1</div>
+        <div class="box box-5">5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realistic Keyboard Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #8989fe;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .keyboard-container {
+            background-color: black;
+            padding: 20px;
+            border-radius: 25px;
+        }
+
+        .keyboard {
+            display: grid;
+            grid-template-columns: repeat(15, 1fr);
+            grid-gap: 5px;
+            padding: 10px;
+        }
+
+        .key {
+            background-color:#3f3d3d;
+            color:#1f1fe1;
+            font-size: 13px;
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        .key.backspace {
+            grid-column: span 2;
+        }
+
+        .key.tab {
+            grid-column: span 2;
+        }
+
+        .key.capslock {
+            grid-column: span 2;
+        }
+
+        .key.shift {
+            grid-column: span 2;
+        }
+
+        .key.shift-right {
+            grid-column: span 3;
+        }
+
+        .key.enter {
+            grid-column: span 2;
+        }
+
+        .key.spacebar {
+            grid-column: span 6;
+        }
+
+        .key.arrow-up {
+            grid-column: span 2;
+        }
+
+        .key.arrow-left, .key.arrow-down, .key.arrow-right {
+            grid-column: span 1;
+        }
+
+        
+        .row-1 {
+            grid-column: span 14;
+        }
+    </style>
+</head>
+<body>
+    <div class="keyboard-container">
+        <div class="keyboard">
+            <div class="key">Esc</div>
+            <div class="key">F1</div>
+            <div class="key">F2</div>
+            <div class="key">F3</div>
+            <div class="key">F4</div>
+            <div class="key">F5</div>
+            <div class="key">F6</div>
+            <div class="key">F7</div>
+            <div class="key">F8</div>
+            <div class="key">F9</div>
+            <div class="key">F10</div>
+            <div class="key">F11</div>
+            <div class="key">F12</div>
+            <div class="key backspace">Backspace</div>
+
+            <div class="key tab">Tab</div>
+            <div class="key">Q</div>
+            <div class="key">W</div>
+            <div class="key">E</div>
+            <div class="key">R</div>
+            <div class="key">T</div>
+            <div class="key">Y</div>
+            <div class="key">U</div>
+            <div class="key">I</div>
+            <div class="key">O</div>
+            <div class="key">P</div>
+            <div class="key">[</div>
+            <div class="key">]</div>
+            <div class="key">\</div>
+
+            <div class="key capslock">Caps Lock</div>
+            <div class="key">A</div>
+            <div class="key">S</div>
+            <div class="key">D</div>
+            <div class="key">F</div>
+            <div class="key">G</div>
+            <div class="key">H</div>
+            <div class="key">J</div>
+            <div class="key">K</div>
+            <div class="key">L</div>
+            <div class="key">;</div>
+            <div class="key">'</div>
+            <div class="key enter">Enter</div>
+
+            <div class="key shift">Shift</div>
+            <div class="key">Z</div>
+            <div class="key">X</div>
+            <div class="key">C</div>
+            <div class="key">V</div>
+            <div class="key">B</div>
+            <div class="key">N</div>
+            <div class="key">M</div>
+            <div class="key">,</div>
+            <div class="key">.</div>
+            <div class="key">/</div>
+            <div class="key shift-right">Shift</div>
+            <div class="key">Ctrl</div>
+            <div class="key">Options</div>
+            <div class="key alt">Alt</div>
+            <div class="key spacebar">Space</div>
+            <div class="key alt">Alt</div>
+            <div class="key">Options</div>
+            <div class="key">Ctrl</div>
+            <div class="key arrow-left">←</div>
+            <div class="key arrow-down">↓</div>
+            <div class="key arrow-right">→</div>
+        </div>
+    </div>
+</body>
+</html>
